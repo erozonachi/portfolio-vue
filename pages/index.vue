@@ -2,9 +2,8 @@
   <div class="container">
     <div>
       <logo />
-      <h1 class="title">
-        portfolio-vue
-      </h1>
+      <h1 class="title">James, Eneh</h1>
+      <!--
       <h2 class="subtitle">
         James Eneh&#39;s portfolio project
       </h2>
@@ -23,7 +22,7 @@
         >
           GitHub
         </a>
-      </div>
+      </div>-->
     </div>
   </div>
 </template>
@@ -52,9 +51,9 @@ export default {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
+  font-weight: 400;
+  font-size: 6.4rem;
+  color: #fafcfd;
   letter-spacing: 1px;
 }
 
