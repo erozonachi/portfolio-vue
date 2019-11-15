@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <logo />
+      <!-- <logo /> -->
+      <img :src="Avatar" alt="Eneh's Display Pix" class="avatar" />
       <h1 class="title">James, Eneh</h1>
       <!--
       <h2 class="subtitle">
@@ -29,11 +30,15 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Avatar from '~/assets/avatar.png'
 
 export default {
   components: {
     Logo
-  }
+  },
+  data: () => ({
+    Avatar
+  })
 }
 </script>
 
@@ -47,6 +52,11 @@ export default {
   text-align: center;
 }
 
+.avatar {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -55,6 +65,7 @@ export default {
   font-size: 6.4rem;
   color: #fafcfd;
   letter-spacing: 1px;
+  animation: bounce-in 2.5s;
 }
 
 .subtitle {
@@ -67,5 +78,17 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 </style>
