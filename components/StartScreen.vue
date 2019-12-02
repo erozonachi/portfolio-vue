@@ -45,6 +45,7 @@ div {
 form {
   max-width: 800px;
   width: 90%;
+  animation: unleash 5s;
 }
 
 input,
@@ -103,6 +104,15 @@ button {
   }
   50% {
     transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes unleash {
+  0% {
+    transform: scale(0);
   }
   100% {
     transform: scale(1);
