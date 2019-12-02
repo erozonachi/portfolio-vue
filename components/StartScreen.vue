@@ -4,12 +4,10 @@
       <img :src="Avatar" alt="Eneh's Display Pix" class="avatar" />
       <h1 class="title">James, Eneh</h1>
     </div>
-    <div v-else>
-      <form>
-        <input type="text" placeholder="Your first name or nickname" />
-        <button type="submit">Chat with James</button>
-      </form>
-    </div>
+    <form v-else>
+      <input type="text" placeholder="Your first name or nickname" />
+      <button type="submit">Chat with James</button>
+    </form>
   </div>
 </template>
 <script>
@@ -40,16 +38,17 @@ export default {
   text-align: center;
 }
 
+div {
+  width: 100%;
+}
+
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 800px;
+  width: 90%;
 }
 
 input,
 button {
-  display: flex;
   outline: none;
   border: none;
   padding: 1rem;
@@ -62,10 +61,12 @@ input {
   border-radius: 1rem;
   font-size: 2rem;
   margin-bottom: 30px;
+  text-align: center;
 }
 button {
-  border-radius: 50%;
+  border-radius: 2rem;
   font-size: 2.4rem;
+  cursor: pointer;
 }
 
 .avatar {
