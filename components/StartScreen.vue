@@ -31,6 +31,34 @@ export default {
   text-align: center;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+button {
+  display: flex;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  background-color: #e4f0f7;
+  color: #4265ed;
+}
+input {
+  border-radius: 1rem;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+button {
+  border-radius: 50%;
+  font-size: 2.4rem;
+}
+
 .avatar {
   max-width: 200px;
   border-radius: 50%;
@@ -42,7 +70,7 @@ export default {
   display: block;
   font-weight: 400;
   font-size: 6.4rem;
-  color: #fafcfd;
+  color: #e4f0f7;
   letter-spacing: 1px;
   animation: bounce-in 2.5s;
 }
