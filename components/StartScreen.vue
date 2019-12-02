@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div v-if="true">
+    <div v-if="isLoading">
       <img :src="Avatar" alt="Eneh's Display Pix" class="avatar" />
       <h1 class="title">James, Eneh</h1>
     </div>
@@ -17,8 +17,17 @@ import Avatar from '~/assets/avatar.png'
 
 export default {
   data: () => ({
-    Avatar
-  })
+    Avatar,
+    isLoading: true
+  }),
+  methods: {
+    loaded: function() {
+      setTimeout(() => (this.isLoading = !this.isLoading), 5000)
+    }
+  },
+  created: function() {
+    this.loaded()
+  }
 }
 </script>
 <style scoped>
