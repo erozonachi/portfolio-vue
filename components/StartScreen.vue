@@ -1,8 +1,14 @@
 <template>
   <div class="container">
-    <div>
+    <div v-if="true">
       <img :src="Avatar" alt="Eneh's Display Pix" class="avatar" />
       <h1 class="title">James, Eneh</h1>
+    </div>
+    <div v-else>
+      <form>
+        <input type="text" placeholder="Your first name or nickname" />
+        <button type="submit">Chat with James</button>
+      </form>
     </div>
   </div>
 </template>
