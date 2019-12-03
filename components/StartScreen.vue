@@ -4,9 +4,9 @@
       <img :src="Avatar" alt="Eneh's Display Pix" class="avatar" />
       <h1 class="title">James, Eneh</h1>
     </div>
-    <form v-else>
+    <form v-on:submit="handleSubmit" v-else>
       <img :src="Avatar" alt="Eneh's Display Pix" class="avatar" />
-      <input type="text" placeholder="Your first name or nickname" />
+      <input type="text" placeholder="Your first name or nickname" v-model="username" />
       <button type="submit">meet james</button>
     </form>
   </div>
@@ -17,7 +17,8 @@ import Avatar from '~/assets/avatar.png'
 export default {
   data: () => ({
     Avatar,
-    isLoading: true
+    isLoading: true,
+    username: ''
   }),
   props: {
     startChatSession: {
@@ -28,6 +29,10 @@ export default {
   methods: {
     loaded: function() {
       setTimeout(() => (this.isLoading = !this.isLoading), 4000)
+    },
+    handleSubmit: function(e) {
+      e.preventDefault()
+      this.startChatSession(this.username)
     }
   },
   created: function() {
