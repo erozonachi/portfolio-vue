@@ -19,6 +19,12 @@ export default {
     Avatar,
     isLoading: true
   }),
+  props: {
+    startChatSession: {
+      type: Function,
+      required: true
+    }
+  },
   methods: {
     loaded: function() {
       setTimeout(() => (this.isLoading = !this.isLoading), 4000)
