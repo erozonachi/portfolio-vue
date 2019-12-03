@@ -5,8 +5,9 @@
       <h1 class="title">James, Eneh</h1>
     </div>
     <form v-else>
+      <img :src="Avatar" alt="Eneh's Display Pix" class="avatar" />
       <input type="text" placeholder="Your first name or nickname" />
-      <button type="submit">Chat with James</button>
+      <button type="submit">meet james</button>
     </form>
   </div>
 </template>
@@ -20,7 +21,7 @@ export default {
   }),
   methods: {
     loaded: function() {
-      setTimeout(() => (this.isLoading = !this.isLoading), 5000)
+      setTimeout(() => (this.isLoading = !this.isLoading), 4000)
     }
   },
   created: function() {
@@ -43,7 +44,7 @@ div {
 }
 
 form {
-  max-width: 800px;
+  max-width: 600px;
   width: 90%;
   animation: unleash 5s;
 }
@@ -53,21 +54,24 @@ button {
   outline: none;
   border: none;
   padding: 1rem;
-  max-width: 800px;
+  max-width: 600px;
   width: 90%;
-  background-color: #e4f0f7;
   color: #4265ed;
 }
 input {
   border-radius: 1rem;
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin: 30px 0;
+  background-color: #e4f0f7;
   text-align: center;
 }
 button {
-  border-radius: 2rem;
+  border-radius: 2.5rem;
   font-size: 2.4rem;
+  background-color: #e4f0e7;
   cursor: pointer;
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 .avatar {
