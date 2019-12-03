@@ -15,7 +15,6 @@ export default {
   methods: {
     startChatSession: function(username) {
       this.username = username
-      console.log('username: ', this.username)
     }
   }
 }

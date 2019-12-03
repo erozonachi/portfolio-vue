@@ -32,7 +32,10 @@ export default {
     },
     handleSubmit: function(e) {
       e.preventDefault()
-      this.startChatSession(this.username)
+      if (this.username.trim() != '') {
+        this.startChatSession(this.username.trim())
+        this.username = ''
+      }
     }
   },
   created: function() {
