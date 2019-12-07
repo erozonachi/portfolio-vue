@@ -5,7 +5,7 @@
         <img :src="Avatar" alt="Eneh's Display Pix" class="avatar" />
         <h1 class="title">James, Eneh</h1>
       </div>
-      <div class="social-handles">
+      <div class="socials">
         <a target="_blank_" href="#"><span></span></a>
         <a target="_blank_" href="#"><span></span></a>
         <a target="_blank_" href="#"><span></span></a>
@@ -48,5 +48,24 @@
   font-size: 1.2rem;
   font-weight: bold;
   color: inherit;
+}
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.socials > a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 10px;
+}
+a:visited {
+  color: #4f4f4f;
+}
+a:link {
+  color: #4f4f4f;
+}
+a:active {
+  color: #4f4f4f;
 }
 </style>
