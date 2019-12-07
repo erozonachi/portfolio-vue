@@ -27,4 +27,16 @@
   border-bottom: 1px solid #f0f0f0;
   color: #4f4f4f;
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+}
+.user-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 </style>
