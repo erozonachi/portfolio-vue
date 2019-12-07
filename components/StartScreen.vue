@@ -6,7 +6,11 @@
     </div>
     <form v-on:submit="handleSubmit" v-else>
       <img :src="Avatar" alt="Eneh's Display Pix" class="avatar" />
-      <input type="text" placeholder="Your first name or nickname" v-model="username" />
+      <input
+        type="text"
+        placeholder="Your first name or nickname"
+        v-model="username"
+      />
       <button type="submit">meet james</button>
     </form>
   </div>
@@ -51,6 +55,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #4265ed;
 }
 
 div {
