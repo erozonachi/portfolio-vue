@@ -29,20 +29,23 @@
   align-items: center;
   max-width: 800px;
   width: 100%;
+  height: 60px;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
 }
 .commands {
   border: none;
   outline: none;
   background-color: inherit;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 2.8rem;
   color: #4265ed;
 }
 form {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 94%;
 }
 input,
 button {
@@ -63,7 +66,7 @@ button {
   background-color: inherit;
   color: #4265ed;
   cursor: pointer;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: bold;
 }
 </style>
