@@ -30,4 +30,11 @@
   max-width: 800px;
   width: 100%;
 }
+.commands {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
 </style>
