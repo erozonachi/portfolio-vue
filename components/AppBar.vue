@@ -13,6 +13,21 @@
     </div>
   </div>
 </template>
+<script>
+import Avatar from '~/assets/avatar.png'
+
+export default {
+  data: () => ({
+    Avatar
+  }),
+  props: {
+    username: {
+      type: String,
+      required: true
+    }
+  }
+}
+</script>
 <style scoped>
 .navbar {
   display: flex;
