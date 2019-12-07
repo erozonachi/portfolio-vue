@@ -1,8 +1,18 @@
 <template>
-  <div class="received">
-    <p>1. My name is James, Eneh; you're lookiing at my portfolio app...</p>
-  </div>
+  <p :class="message.type == `sent` ? `sent` : `received`">
+    1. My name is James, Eneh; you're lookiing at my portfolio app...
+  </p>
 </template>
+<script>
+export default {
+  props: {
+    message: {
+      type: Object,
+      required: true
+    }
+  }
+}
+</script>
 <style scoped>
 .sent,
 .received {
