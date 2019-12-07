@@ -39,4 +39,14 @@
   justify-content: flex-start;
   align-items: center;
 }
+.avatar {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: inherit;
+}
 </style>
