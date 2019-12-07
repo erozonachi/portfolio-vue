@@ -1,5 +1,10 @@
 <template>
-  <StartScreen v-bind:startChatSession="startChatSession" />
+  <StartScreen v-bind:startChatSession="startChatSession" v-if="username" />
+  <div v-else>
+    <AppBar :username="username" />
+    <Chats />
+    <FootBar />
+  </div>
 </template>
 
 <script>
