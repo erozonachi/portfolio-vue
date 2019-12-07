@@ -39,7 +39,6 @@ export default {
   height: 50px;
   background-color: #ffffff;
   border: none;
-  border-bottom: 1px solid #f0f0f0;
   color: #4f4f4f;
 }
 .container {
@@ -51,6 +50,7 @@ export default {
   height: 50px;
   border-left: 1px solid #f0f0f0;
   border-right: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
 }
 .user-info {
   display: flex;

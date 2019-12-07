@@ -20,7 +20,6 @@
   height: 60px;
   background-color: #ffffff;
   border: none;
-  border-top: 1px solid #f0f0f0;
   color: #4f4f4f;
 }
 .container {
@@ -32,6 +31,7 @@
   height: 60px;
   border-left: 1px solid #f0f0f0;
   border-right: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0;
 }
 .commands {
   border: none;
