@@ -1,9 +1,12 @@
 <template>
   <p :class="message.type === `sent` ? `sent` : `received`">
-    1. My name is James, Eneh; you're lookiing at my portfolio app... 1. My name
+    {{
+      message.text ||
+        `1. My name is James, Eneh; you're lookiing at my portfolio app... 1. My name
     is James, Eneh; you're lookiing at my portfolio app... 1. My name is James,
     Eneh; you're lookiing at my portfolio app... 1. My name is James, Eneh;
-    you're lookiing at my portfolio app...
+    you're lookiing at my portfolio app...`
+    }}
   </p>
 </template>
 <script>
