@@ -2,7 +2,7 @@
   <div class="footbar">
     <div class="container">
       <button class="commands">···</button>
-      <form>
+      <form v-on:submit="handleSubmit">
         <input type="text" placeholder="Type message..." v-model="message" />
         <button type="submit">send</button>
       </form>
@@ -14,6 +14,21 @@ export default {
   data: function() {
     return {
       message: ''
+    }
+  },
+  props: {
+    sendMessage: {
+      type: Function,
+      required: true
+    }
+  },
+  methods: {
+    handleSubmit: function(e) {
+      e.preventDefault()
+      if (this.message.trim() != '') {
+        this.sendMessage(this.message.trim())
+        this.message = ''
+      }
     }
   }
 }
