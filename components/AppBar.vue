@@ -6,19 +6,31 @@
         <h1 class="title">James</h1>
       </div>
       <div class="socials">
-        <a target="_blank_" href="#"><span>L</span></a>
-        <a target="_blank_" href="#"><span>G</span></a>
-        <a target="_blank_" href="#"><span>T</span></a>
+        <a target="_blank_" href="https://github.com/erozonachi"
+          ><img :src="GitHub" alt="Eneh's GitHub profile" class="icon"
+        /></a>
+        <a target="_blank_" href="https://www.linkedin.com/in/eneh/"
+          ><img :src="Linkedin" alt="Eneh's Linkedin profile" class="icon"
+        /></a>
+        <a target="_blank_" href="https://twitter.com/iam_CodeMaker"
+          ><img :src="Twitter" alt="Eneh's Twitter profile" class="icon"
+        /></a>
       </div>
     </div>
   </div>
 </template>
 <script>
 import Avatar from '~/assets/avatar.png'
+import GitHub from '~/assets/github-logo.png'
+import Linkedin from '~/assets/linkedin-logo.png'
+import Twitter from '~/assets/twitter-logo.png'
 
 export default {
   data: () => ({
-    Avatar
+    Avatar,
+    GitHub,
+    Linkedin,
+    Twitter
   }),
   props: {
     username: {
@@ -58,9 +70,12 @@ export default {
   align-items: center;
 }
 .avatar {
-  width: 30px;
   border-radius: 50%;
   margin: 0 10px;
+  width: 30px;
+}
+.icon {
+  width: 20px;
 }
 .title {
   font-size: 1.6rem;
@@ -76,7 +91,7 @@ export default {
 .socials > a {
   text-decoration: none;
   color: inherit;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 a:visited {
   color: #4f4f4f;
