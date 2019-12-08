@@ -1,5 +1,5 @@
 <template>
-  <p :class="message.type === `sent` ? `sent` : `received`">
+  <div :class="message.type === `sent` ? `sent` : `received`">
     {{
       message.text ||
         `1. My name is James, Eneh; you're lookiing at my portfolio app... 1. My name
@@ -7,7 +7,7 @@
     Eneh; you're lookiing at my portfolio app... 1. My name is James, Eneh;
     you're lookiing at my portfolio app...`
     }}
-  </p>
+  </div>
 </template>
 <script>
 export default {
