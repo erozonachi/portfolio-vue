@@ -76,6 +76,12 @@ export default {
   methods: {
     startChatSession: function(username) {
       this.username = username
+      this.stackMessage({
+        id: this.messages.length + 1,
+        type: 'received',
+        text: `Hello ${this.username.charAt(0).toUpperCase() +
+          this.username.substr(1)}`
+      })
     },
     stackMessage: function(message) {
       this.messages.unshift(message)
