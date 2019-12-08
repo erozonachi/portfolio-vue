@@ -74,6 +74,15 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    handleSubmit: function(e) {
+      e.preventDefault()
+      if (this.username.trim() != '') {
+        this.startChatSession(this.username.trim())
+        this.username = ''
+      }
+    }
   }
 }
 </script>

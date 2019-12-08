@@ -3,12 +3,21 @@
     <div class="container">
       <button class="commands">···</button>
       <form>
-        <input type="text" placeholder="Type message..." />
+        <input type="text" placeholder="Type message..." v-model="message" />
         <button type="submit">send</button>
       </form>
     </div>
   </div>
 </template>
+<script>
+export default {
+  data: function() {
+    return {
+      message: ''
+    }
+  }
+}
+</script>
 <style scoped>
 .footbar {
   display: flex;
