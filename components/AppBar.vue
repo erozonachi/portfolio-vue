@@ -31,13 +31,7 @@ export default {
     GitHub,
     Linkedin,
     Twitter
-  }),
-  props: {
-    username: {
-      type: String,
-      required: true
-    }
-  }
+  })
 }
 </script>
 <style scoped>

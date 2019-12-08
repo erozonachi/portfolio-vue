@@ -14,58 +14,67 @@ export default {
   components: {
     MessageCard
   },
-  data: () => ({
-    messages: [
-      {
-        id: 1,
-        type: `sent`
-      },
-      {
-        id: 2,
-        type: `received`
-      },
-      {
-        id: 3,
-        type: `sent`
-      },
-      {
-        id: 4,
-        type: `received`
-      },
-      {
-        id: 5,
-        type: `sent`
-      },
-      {
-        id: 6,
-        type: `received`
-      },
-      {
-        id: 7,
-        type: `sent`
-      },
-      {
-        id: 8,
-        type: `received`
-      },
-      {
-        id: 9,
-        type: `sent`
-      },
-      {
-        id: 10,
-        type: `received`
-      },
-      {
-        id: 11,
-        type: `sent`
-      },
-      {
-        id: 12,
-        type: `received`
-      }
-    ]
-  })
+  props: {
+    username: {
+      type: String,
+      required: true
+    }
+  },
+  data: function() {
+    return {
+      messages: [
+        {
+          id: 1,
+          type: `received`,
+          text: `Hello, ${this.username.toUpperCase()}`
+        },
+        {
+          id: 2,
+          type: `received`
+        },
+        {
+          id: 3,
+          type: `sent`
+        },
+        {
+          id: 4,
+          type: `received`
+        },
+        {
+          id: 5,
+          type: `sent`
+        },
+        {
+          id: 6,
+          type: `received`
+        },
+        {
+          id: 7,
+          type: `sent`
+        },
+        {
+          id: 8,
+          type: `received`
+        },
+        {
+          id: 9,
+          type: `sent`
+        },
+        {
+          id: 10,
+          type: `received`
+        },
+        {
+          id: 11,
+          type: `sent`
+        },
+        {
+          id: 12,
+          type: `received`
+        }
+      ]
+    }
+  }
 }
 </script>
 <style scoped>
