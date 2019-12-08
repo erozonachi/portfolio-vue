@@ -1,6 +1,9 @@
 <template>
-  <p :class="message.type == `sent` ? `sent` : `received`">
-    1. My name is James, Eneh; you're lookiing at my portfolio app...
+  <p :class="message.type === `sent` ? `sent` : `received`">
+    1. My name is James, Eneh; you're lookiing at my portfolio app... 1. My name
+    is James, Eneh; you're lookiing at my portfolio app... 1. My name is James,
+    Eneh; you're lookiing at my portfolio app... 1. My name is James, Eneh;
+    you're lookiing at my portfolio app...
   </p>
 </template>
 <script>
@@ -18,13 +21,15 @@ export default {
 .received {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 320px;
   width: fit-content;
   border-radius: 5px;
   border: 1px solid #ffffff;
   padding: 10px;
-  margin: 10px;
+  margin: 5px 10px;
   color: #333333;
+  font-size: 1.6rem;
+  line-height: 150%;
 }
 .sent {
   background-color: #e4f0f7;
